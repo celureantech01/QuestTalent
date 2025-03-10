@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/localGPT" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/localGPT/AutoGPTQ" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/streamlit_login_auth_ui" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/streamlit_login_auth_ui/AutoGPTQ" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/streamlit_login_auth_ui/phc-winner-argon2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/streamlit_login_auth_ui/pyresparser" vcs="Git" />
+  </component>
+</project>

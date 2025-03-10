@@ -1,0 +1,23 @@
+export OPENAI_API_KEY="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"
+export PATH=/home/user/mambaforge/envs/myenv/bin:/workspace/anaconda3/bin/:$PATH
+export PROXY_CURL_API="1YFngqfhXbs7PzZZbt7r3w"
+export PROXYCURL_API_KEY="1YFngqfhXbs7PzZZbt7r3w"
+#source /workspace/anaconda3/etc/profile.d/conda.sh
+#conda activate localGPT
+apt update && apt install -y vim
+#cd /workspace/localGPT
+#export PATH=/usr/local/cuda-12.3/bin:$PATH
+# Example: cuBLAS
+#CMAKE_ARGS="-DLLAMA_CUBLAS=on" FORCE_CMAKE=1 pip install llama-cpp-python==0.1.83 --no-cache-dir
+#pip install torch
+#pip install -r requirements.txt
+pip install streamlit==1.31.0
+pip install streamlit-extras==0.4.0
+pip install langchain==0.0.354
+pip install langchain_community==0.0.19
+pip install langsmith==0.0.87
+pip install langchain-openai==0.0.5
+pip install streamlit_lottie
+pip install farm-haystack
+ps -ef |grep sshd |grep -v grep|awk '{print $2}' |xargs kill -9
+streamlit run TalentMap_dev.py --server.port=22
