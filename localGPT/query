@@ -1,0 +1,42 @@
+```sql
+SELECT "resume"
+FROM "userDB"
+WHERE LOWER("Skills") LIKE '%data analysis%'
+   OR LOWER("Skills") LIKE '%math%'
+   OR LOWER("Skills") LIKE '%statistics%'
+   OR LOWER("Skills") LIKE '%critical thinking%'
+   OR LOWER("Skills") LIKE '%problem-solving%'
+   OR LOWER("Skills") LIKE '%machine-learning%'
+   OR LOWER("Skills") LIKE '%research%'
+   OR LOWER("Skills") LIKE '%data preprocessing%'
+   OR LOWER("Skills") LIKE '%predictive modeling%'
+   OR LOWER("Skills") LIKE '%machine-learning algorithms%'
+   OR LOWER("Skills") LIKE '%ensemble modeling%'
+   OR LOWER("Skills") LIKE '%data visualization%'
+   OR LOWER("Skills") LIKE '%business acumen%'
+   AND "Work Experience" > 2
+ORDER BY (
+   CASE WHEN LOWER("Skills") LIKE '%data analysis%' THEN 1 ELSE 0 END +
+   CASE WHEN LOWER("Skills") LIKE '%math%' THEN 1 ELSE 0 END +
+   CASE WHEN LOWER("Skills") LIKE '%statistics%' THEN 1 ELSE 0 END +
+   CASE WHEN LOWER("Skills") LIKE '%critical thinking%' THEN 1 ELSE 0 END +
+   CASE WHEN LOWER("Skills") LIKE '%problem-solving%' THEN 1 ELSE 0 END +
+   CASE WHEN LOWER("Skills") LIKE '%machine-learning%' THEN 1 ELSE 0 END +
+   CASE WHEN LOWER("Skills") LIKE '%research%' THEN 1 ELSE 0 END +
+   CASE WHEN LOWER("Skills") LIKE '%data preprocessing%' THEN 1 ELSE 0 END +
+   CASE WHEN LOWER("Skills") LIKE '%predictive modeling%' THEN 1 ELSE 0 END +
+   CASE WHEN LOWER("Skills") LIKE '%machine-learning algorithms%' THEN 1 ELSE 0 END +
+   CASE WHEN LOWER("Skills") LIKE '%ensemble modeling%' THEN 1 ELSE 0 END +
+   CASE WHEN LOWER("Skills") LIKE '%data visualization%' THEN 1 ELSE 0 END +
+   CASE WHEN LOWER("Skills") LIKE '%business acumen%' THEN 1 ELSE 0 END
+) DESC
+LIMIT 20;
+
+
+
+
+
+SELECT "resume" FROM "userDB" WHERE  LOWER("Skills") LIKE '%data analysis%' OR  LOWER("Skills") LIKE '%mathematics%' OR  LOWER("Skills") LIKE '%statistics%' OR  LOWER("Skills") LIKE '%critical thinking%' OR  LOWER("Skills") LIKE '%problem-solving%' OR  LOWER("Skills") LIKE '%machine learning%' OR  LOWER("Skills") LIKE '%research%' OR  LOWER("Skills") LIKE '%data preprocessing%' OR  LOWER("Skills") LIKE '%predictive modeling%' OR  LOWER("Skills") LIKE '%ensemble modeling%' OR  LOWER("Skills") LIKE '%data visualization%' OR  LOWER("Skills") LIKE '%business strategy%' OR  LOWER("Skills") LIKE '%collaboration%' OR  LOWER("Skills") LIKE '%data mining%' OR  LOWER("Skills") LIKE '%operations research%' OR  LOWER("Skills") LIKE '%r%' OR  LOWER("Skills") LIKE '%sql%' OR  LOWER("Skills") LIKE '%python%' OR  LOWER("Skills") LIKE '%scala%' OR  LOWER("Skills") LIKE '%java%' OR  LOWER("Skills") LIKE '%c++%' OR  LOWER("Skills") LIKE '%business intelligence%' OR  LOWER("Skills") LIKE '%hadoop%' OR  LOWER("Skills") LIKE '%analytical thinking%' OR  LOWER("Skills") LIKE '%mathematical skills%' OR  LOWER("Skills") LIKE '%communication%' OR  LOWER("Skills") LIKE '%presentation%'
+ ORDER BY (CASE WHEN LOWER("Skills") LIKE '%data analysis%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%mathematics%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%statistics%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%critical thinking%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%problem-solving%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%machine learning%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%research%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%data preprocessing%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%predictive modeling%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%ensemble modeling%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%data visualization%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%business strategy%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%collaboration%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%data mining%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%operations research%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%r%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%sql%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%python%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%scala%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%java%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%c++%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%business intelligence%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%hadoop%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%analytical thinking%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%mathematical skills%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%communication%' THEN 1 ELSE 0 END +CASE WHEN LOWER("Skills") LIKE '%presentation%' THEN 1 ELSE 0 END  ) DESC LIMIT 20
+
+

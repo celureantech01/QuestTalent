@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: streamlit_login_auth_ui
+Version: 0.1.0
+Summary: A streamlit library which provides a Login/Sign-Up UI with an option to reset password, also supports cookies.
+Home-page: https://github.com/GauriSP10/streamlit_login_signup_ui
+Author: Gauri Prabhakar
+Author-email: prabhakargauri10@gmail.com
+Keywords: streamlit,machine learning,login,sign-up,authentication,cookies
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit
+Requires-Dist: streamlit_lottie
+Requires-Dist: extra_streamlit_components
+Requires-Dist: streamlit_option_menu
+Requires-Dist: trycourier
+Requires-Dist: streamlit_cookies_manager
